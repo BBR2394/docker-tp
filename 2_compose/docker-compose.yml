@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    image: xataz/gobrowser
+    ports:
+      - "2020:5000"
+    environment:
+      - DEBUG=1
